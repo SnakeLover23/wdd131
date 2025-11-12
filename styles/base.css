@@ -23,8 +23,8 @@ header h1 {
 nav {
     background-color: var(--nav-background-color);
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 nav a {
@@ -58,7 +58,7 @@ footer p {
     border-radius: 1rem;
     background-color: var(--main-background-color);
 }
-.card h2{
+.title {
     text-align: center;
     background-color: var(--header-background-color);
     color: var(--text-color-light);
@@ -74,7 +74,7 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.about-me h2 {
+.about-me .title {
     grid-column: 1/5;
 }
 .about-me h3 {
