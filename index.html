@@ -1,11 +1,48 @@
+<!-- 11/10/2025 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/base.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Home Page, Gage Thorup">
+    <meta name="author" content="Gage Thorup">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gage Thorup</title>
 </head>
 <body>
-    
+    <header>
+        <span id="course-title"><h1>131 | Dynamic Web Fundamentals</h1></span>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/6?lang=eng&id=p34#p34">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Gage Thorup</h1>
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <p class="self-describe">My Name is Gage Thorup. I was born and raised in the wonderfull state of Utah. I am excited to be able to expand on my programing skills in this course. I have two pet snakes.</p>
+            <img src="images/profile.png" alt="Profile Picture" class="img1">
+            <h3>Utah</h3>
+            <img src="images/utah-flag.jpg" alt="Utah State Flag" class="img2">
+            <p class="state">Utah is a wonderfull place full of stunning red rocks and sprawling mountan ranges. The air is dry and the tempurature is inconsistant every year but its home.</p>
+        </section>
+        <section class="card dev-resources">
+            <h2>Web Dev Resouces</h2>
+            <ul>
+                <li><a href="https://github.com/SnakeLover23/wdd131">Github</a></li>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/">WDD 131 course</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a></li>
+                <li><a href="https://codepen.io/BYU-Idaho">Codepen</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Gage Thorup | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
