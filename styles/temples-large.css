@@ -1,0 +1,23 @@
+@media screen and (min-width: 500px) {
+    header button{
+        display: none;
+    }
+    nav {
+        display: flex;
+        max-width: 100%;
+        position: inherit;
+    }
+    nav a {
+        width: 20%;
+    }
+    main {
+        max-width: 1000px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main h1 {
+        grid-column: 1/4;
+    }
+    .navigation {
+        display: flex;
+    }
+}

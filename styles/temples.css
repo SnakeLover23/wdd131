@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    background-color: navy;
+    color: white;
+}
+header button {
+    position: absolute;
+    top: 1rem;
+    right: 1.3rem;
+    background-color: white;
+    color: navy;
+    padding: 0.5rem;
+    width: 2.4rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+header h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 5rem;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+}
+nav a {
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+}
+nav a:hover {
+    background-color: white;
+    color: navy;
+    border: 1px solid navy;
+}
+main {
+    display: grid;
+    max-width: 400px;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding-bottom: 1rem;
+}
+main h1 {
+    padding-top: 1rem;
+}
+main figure {
+    padding-top: 1rem;
+    margin: 0 1rem;
+}
+footer {
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+}
+/* classes */
+.navigation {
+    display: none;
+}
+.open {
+    display: flex;
+}
+/* ID */
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "❌";
+}
