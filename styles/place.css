@@ -1,19 +1,23 @@
+:root {
+    --color1: darkgreen;
+    --color2: green;
+    --color3: lightgrey;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 header {
-    background-color: darkgreen;
+    background-color: var(--color1 );
     padding: 1rem;
 }
-header p {
+header h1 {
     padding: 1rem;
-    background-color: green;
+    background-color: var(--color2);
     width: 100%;
     text-align: center;
     justify-self: center;
-    font-size: xx-large;
 }
 main {
     max-width: 400px;
@@ -23,23 +27,23 @@ ul li {
     list-style: none;
 }
 footer {
-    background-color: darkgreen;
+    background-color: var(--color1);
     padding: 1rem;
 }
 footer p {
     padding-top: 1rem;
-    background-color: green;
+    background-color: var(--color2);
     text-align: center;
     justify-self: center;
 }
 footer div {
-    background-color: green;
+    background-color: var(--color2);
     padding-bottom: 1rem;
 }
 
 /* classes */
 .data {
-    background-color: lightgray;
+    background-color: var(--color3);
     padding-bottom: 1rem;
 }
 .data h2 {
@@ -47,7 +51,7 @@ footer div {
     padding: 1rem;
 }
 .weather {
-    background-color: lightgray;
+    background-color: var(--color3);
     padding-bottom: 1rem;
 }
 .weather div {
