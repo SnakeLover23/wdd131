@@ -10,7 +10,7 @@ header {
 header p {
     padding: 1rem;
     background-color: green;
-    width: 300px;
+    width: 100%;
     text-align: center;
     justify-self: center;
     font-size: xx-large;
@@ -22,5 +22,49 @@ main {
 ul li {
     list-style: none;
 }
+footer {
+    background-color: darkgreen;
+    padding: 1rem;
+}
+footer p {
+    padding-top: 1rem;
+    background-color: green;
+    text-align: center;
+    justify-self: center;
+}
+footer div {
+    background-color: green;
+    padding-bottom: 1rem;
+}
 
 /* classes */
+.data {
+    background-color: lightgray;
+    padding-bottom: 1rem;
+}
+.data h2 {
+    text-align: center;
+    padding: 1rem;
+}
+.weather {
+    background-color: lightgray;
+    padding-bottom: 1rem;
+}
+.weather div {
+    text-align: center;
+    padding: 1rem;
+}
+.weather img {
+    width: 30px;
+    height: auto;
+}
+.stats {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+}
+.stats li:nth-child(odd) {
+    text-align: right;
+    font-weight: bold;
+}
