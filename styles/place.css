@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: darkgreen;
+    padding: 1rem;
+}
+header p {
+    padding: 1rem;
+    background-color: green;
+    width: 300px;
+    text-align: center;
+    justify-self: center;
+    font-size: xx-large;
+}
+main {
+    max-width: 400px;
+    margin: 0 auto;
+}
+ul li {
+    list-style: none;
+}
+
+/* classes */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="scripts/place.js"></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gage Thorup">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Country Page, Gage Thorup">
+    <title>Country Page</title>
+</head>
+<body>
+    <header>
+        <p>Florida</p>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 10000px)" srcset="images/florida-hero-large.webp">
+                <img src="images/florida-hero-small.webp" alt="Florida">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area:</li>
+                <li>65,758 sq mi</li>
+                <li>Population:</li>
+                <li>23.37 million</li>
+                <li>Capital:</li>
+                <li>Tallahassee</li>
+                <li>Languages:</li>
+                <li>English, Spanish</li>
+                <li>Currency:</li>
+                <li>United States Dollar</li>
+                <li>Time Zone:</li>
+                <li>Eastern Standard Time</li>
+                <li>Calling Code:</li>
+                <li>+407, +813, +904 ect</li>
+                <li>Internet TLD:</li>
+                <li>.gov</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="images/weather-storm.svg" alt="Stormy Weather">
+            </div>
+            <ul>
+                <li>Temperature:</li>
+                <li>70.8 F</li>
+                <li>Conditions:</li>
+                <li>Thunderstorms</li>
+                <li>Wind:</li>
+                <li>7.2 mi/h</li>
+                <li>Wind Chill:</li>
+                <li><span id="windchill"></span> F</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Gage Thorup | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
