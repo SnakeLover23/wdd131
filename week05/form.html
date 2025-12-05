@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="scripts/form.js"></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Product Review Form, Gage Thorup">
+    <meta name="author" content="Gage Thorup">
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label>Product Name 
+                    <select name="product" id="product" class= "product"required>
+                        <option value="" selected disabled>Select a Product ..</option>
+                    </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <div class="rating">
+                    <label>☆<input type="radio" name="rating" id="rating" value="1" required></label>
+                    <label>☆☆<input type="radio" name="rating" id="rating" value="2" required></label>
+                    <label>☆☆☆<input type="radio" name="rating" id="rating" value="3" required></label>
+                    <label>☆☆☆☆<input type="radio" name="rating" id="rating" value="4" required></label>
+                    <label>☆☆☆☆☆<input type="radio" name="rating" id="rating" value="5" required></label>
+                </div>
+                <label>Date of Instalation <input type="date" name="date" id="date" required></label>
+
+                <div>Which features did you find usefull in the product?</div>
+                <div class="italic">(Check all that apply)</div>
+                <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+
+                <label class="review"> Writen Review <span class="blue">(optional)</span> <textarea name="review" id="review"></textarea></label>
+
+                <label> Your Name <span class="blue">(optional)</span> <input type="text" name="name" id="name"></label>
+
+                <input type="submit" value="Post Review">
+            </fieldset>
+
+
+
+
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Gage Thorup | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

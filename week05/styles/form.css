@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: #ddd;
+    padding: 1rem;
+    
+}
+
+label {
+    display: block;
+}
+
+#rating {
+    display: block;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+.rating label input {
+    justify-self: center;
+}
+
+input[type="text"], input[type="date"], textarea, select {
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+textarea {
+    height: 4rem;
+}
+
+input[type="checkbox"]{
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    font-size: x-large;
+    padding: 0.5rem 1rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.review {
+    margin-top: 1rem;
+}
+
+.blue {
+    color: #4800ce;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
