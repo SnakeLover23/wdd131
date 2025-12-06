@@ -12,7 +12,7 @@ header {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 400px;
     padding: 1rem;
     margin: 0 auto;
 }
@@ -27,7 +27,7 @@ label {
     display: block;
 }
 
-#rating {
+input[name="rating"] {
     display: block;
 }
 
