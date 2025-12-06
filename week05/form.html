@@ -16,21 +16,21 @@
     <main>
         <form method="get" action="review.html">
             <fieldset>
-                <label>Product Name 
+                <label>Product Name<span class="red">*</span>
                     <select name="product" id="product" class= "product"required>
                         <option value="" selected disabled>Select a Product ..</option>
                     </select>
                 </label>
 
-                <div>Overall Rating</div>
+                <div>Overall Rating<span class="red">*</span></div>
                 <div class="rating">
-                    <label>☆<input type="radio" name="rating" id="rating" value="1" required></label>
-                    <label>☆☆<input type="radio" name="rating" id="rating" value="2" required></label>
-                    <label>☆☆☆<input type="radio" name="rating" id="rating" value="3" required></label>
-                    <label>☆☆☆☆<input type="radio" name="rating" id="rating" value="4" required></label>
-                    <label>☆☆☆☆☆<input type="radio" name="rating" id="rating" value="5" required></label>
+                    <label>☆<input type="radio" name="rating" id="rating1" value="1" required></label>
+                    <label>☆☆<input type="radio" name="rating" id="rating2" value="2" required></label>
+                    <label>☆☆☆<input type="radio" name="rating" id="rating3" value="3" required></label>
+                    <label>☆☆☆☆<input type="radio" name="rating" id="rating4" value="4" required></label>
+                    <label>☆☆☆☆☆<input type="radio" name="rating" id="rating5" value="5" required></label>
                 </div>
-                <label>Date of Instalation <input type="date" name="date" id="date" required></label>
+                <label>Date of Instalation<span class="red">*</span> <input type="date" name="date" id="date" required></label>
 
                 <div>Which features did you find usefull in the product?</div>
                 <div class="italic">(Check all that apply)</div>

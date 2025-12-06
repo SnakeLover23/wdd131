@@ -20,7 +20,7 @@ main {
 fieldset {
     background-color: #ddd;
     padding: 1rem;
-    
+    min-height: 100%;
 }
 
 label {
@@ -74,6 +74,10 @@ input[type="submit"] {
 
 .blue {
     color: #4800ce;
+}
+
+.red {
+    color: #ff0000;
 }
 
 footer {
