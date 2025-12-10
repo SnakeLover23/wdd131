@@ -47,6 +47,11 @@ main {
     grid-template-columns: 1fr;
     row-gap: 1rem;
 }
+.facts {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
 section {
     color: var(--white);
     background-color: var(--green);
@@ -64,6 +69,9 @@ section h2 {
     border-top: 1px solid var(--border-color);
     padding: 1rem;
     margin-bottom: 1rem;
+}
+section p {
+    padding: 0 1rem;
 }
 a {
     text-decoration: none;

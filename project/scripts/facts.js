@@ -2,7 +2,7 @@ const snakes = [
     {
         title: "Smallist",
         image: "images/barbados-threadsnake.webp",
-        description: "Tetracheilostoma carlae or the Barbados threadsnake is the smallest snake in the world only measuring at most 10 centimeters in length. This species of snake is criticly endangured with no wild specimins being found between 2005 and 2025."
+        description: "Tetracheilostoma Carlae or the Barbados Threadsnake is the smallest snake in the world only measuring at most 10 centimeters in length. This species of snake is criticly endangured with no wild specimins being found between 2005 and 2025."
     },
     {
         title: "Constrictors",
@@ -17,17 +17,17 @@ const snakes = [
     {
         title: "Ovivores",
         image: "images/red-bellied-black-snake.webp",
-        description: "Some snakes are ovivores which means their diet consist entirly of eggs"
+        description: "Some snakes are ovivores which means their diet consist entirly of eggs."
     },
     {
         title: "Largest",
         image: "images/reticulated-python.webp",
-        description: "The largest snake in the world is the Reticulated Python from southeast Aisa able to grow to an impressive 6.5 meters though longer snakes growing up to 7.6 meters have been recorded."
+        description: "The largest snake in the world is the Reticulated Python from southeast Aisa able to grow to an impressive 6.5 meters, though longer snakes growing up to 7.6 meters have been recorded."
     },
     {
         title: "Flying",
         image: "images/paradise-flying-snake.webp",
-        description: "Chrysopelea paradisi or the Paradise Flying Snake is a snake with the fascinating ability to glide between trees, it does this by stretching and flatening its ribcage to give its body more surface area when it jumps."
+        description: "Chrysopelea Paradisi or the Paradise Flying Snake is a snake with the fascinating ability to glide between trees, it does this by stretching and flatening its ribcage to give its body more surface area when it jumps."
     },
     {
         title: "Swimming",
@@ -46,19 +46,28 @@ const snakes = [
     }
 ];
 
-const rng = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function createSnakeCards() {
+    snakes.forEach(snake => {
+        let card = document.createElement("section");
+		let title = document.createElement("h2");
+        let img = document.createElement("img");
+		let description = document.createElement("p");
+		
+        title.textContent = snake.title;
+        description.textContent = snake.description;
+        img.setAttribute("src", snake.image);
+        img.setAttribute("alt", snake.title);
+        img.setAttribute("loading", "lazy");
+
+        card.appendChild(title);
+        card.appendChild(img);
+        card.appendChild(description);
+
+        document.querySelector(".facts").appendChild(card);
+    });
 };
 
-function randomsnake() {
-    const snake = snakes[rng(0,snakes.length - 1)]
-    let img = document.querySelector("#randimg")
-    img.setAttribute("src", snake.image)
-};
-
-randomsnake();
+createSnakeCards();
 
 const today = new Date();
 const currentyear = document.querySelector("#currentyear");
