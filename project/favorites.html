@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script defer src="scripts/finale.js"></script>
+    <script defer src="scripts/favorites.js"></script>
     <link rel="stylesheet" href="styles/final.css">
     <link rel="stylesheet" href="styles/final-large.css">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Finale Project Favorites page, Gage Thorup">
@@ -23,7 +23,28 @@
         </nav>
     </header>
     <main>
-        
+        <div class="favorite size">
+            <form class="favz" method="get">
+                <fieldset>
+                    <legend>Your Favorite Snake</legend>
+                    <label for="type">
+                        Type of snake<span class="red">*</span>
+                        <input type="text" name="type" id="type" required>
+                    </label>
+                    <label for="description">
+                        Description <span class="blue">(optional)</span>
+                        <textarea name="description" id="description"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Share Your Favorite!">
+            </form>
+            <section class="favorites">
+                <h2>Your Favorites</h2>
+                <ul class="yourfavs">
+
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
         <p>©<span id="currentyear"></span> | Gage Thorup | Utah</p>

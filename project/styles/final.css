@@ -52,6 +52,58 @@ main {
     grid-template-columns: 1fr;
     row-gap: 1rem;
 }
+.favorite {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+.favz {
+    display: grid;
+}
+.favz fieldset {
+    padding-bottom: 1rem;
+    background-color: var(--dark-green);
+}
+.favz legend {
+    color: var(--white);
+    text-align: center;
+}
+.favz label {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: var(--white);
+}
+.favz input[type="text"], textarea {
+    display: block;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    width: 92%;
+    max-width: 400px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+}
+.favz input[type="submit"] {
+    background-color: var(--dark-green);
+    border: 1px solid var(--white);
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-size: x-large;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 400px;
+}
+.favz input[type="submit"]:hover {
+    background-color: var(--green);
+}
+.yourfavs {
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
 section {
     color: var(--white);
     background-color: var(--green);
@@ -75,4 +127,7 @@ section p {
 }
 a {
     text-decoration: none;
+}
+ul li {
+    list-style: none;
 }

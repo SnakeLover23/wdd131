@@ -22,4 +22,7 @@
     .purpose {
         grid-column: 1/3;
     }
+    .yourfavs {
+        grid-template-columns: 1fr 1fr;
+    }
 }
