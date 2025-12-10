@@ -1,0 +1,70 @@
+:root {
+    --green: #49b10e;
+    --dark-green: #378f04;
+    --darker-green: #286e00;
+    --white: #fff;
+    --border-color: rgb(0 0 0 / 10%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Relief";
+}
+header, footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+}
+nav a {
+    background-color: var(--dark-green);
+    color: var(--white);
+    width: 33%;
+    padding: 1rem;
+}
+nav a:hover {
+    background-color: var(--green);
+}
+main {
+    background-color: var(--darker-green);
+    padding: 1rem;
+}
+.size {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.home{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+section {
+    color: var(--white);
+    background-color: var(--green);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+section h2 {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+}
