@@ -1,6 +1,6 @@
 const form = document.querySelector(".favz");
 
-localStorage.clear();
+// localStorage.clear();
 let data = localStorage.getItem("favorites");
 let favorites = JSON.parse(localStorage.getItem("favorites"));
 
